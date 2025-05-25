@@ -15,20 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
         requiredFields.forEach(field => {
           if (!field.value.trim()) {
             const label = field.previousElementSibling?.textContent || field.name || "This field";
-            M.toast({ html: `❗ ${label.trim()} is required`, classes: "red rounded" });
+            M.toast({ html: ` ${label.trim()} is required`, classes: "red rounded" });
             isValid = false;
           }
         });
   
         //  Check email format
         if (emailField && !/^[^\s@]+@[^\s@]+\.(com|net|org|edu|gov|mil|co|in|uk|ca|au|de)$/i.test(emailField.value)) {
-          M.toast({ html: "❗ Invalid email format", classes: "red rounded" });
+          M.toast({ html: " Invalid email format", classes: "red rounded" });
           isValid = false;
         }
   
         //  Check password length
         if (passwordField && passwordField.value.length < 6) {
-          M.toast({ html: "❗ Password must be at least 6 characters", classes: "red rounded" });
+          M.toast({ html: " Password must be at least 6 characters", classes: "red rounded" });
           isValid = false;
         }
   
