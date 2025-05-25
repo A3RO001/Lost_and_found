@@ -60,7 +60,7 @@
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <!-- ✅ Toast-based Registration Logic -->
+  <!--  Toast-based Registration Logic -->
   <script>
     // Email validation regex
     function isValidEmail(email) {
@@ -102,14 +102,14 @@
           }, 3000);
         } else {
           M.toast({
-            html: `🚫 ${data.error || "Registration failed"}`,
+            html: ` ${data.error || "Registration failed"}`,
             classes: "red rounded",
             displayLength: 3000
           });
         }
       } catch (err) {
         M.toast({
-          html: "❌ Server error occurred",
+          html: " Server error occurred",
           classes: "red rounded",
           displayLength: 3000
         });
