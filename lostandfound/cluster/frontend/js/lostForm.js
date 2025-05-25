@@ -11,7 +11,7 @@ document.getElementById("lostForm").addEventListener("submit", async (e) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${token}`  // ✅ Include this!
+      "Authorization": `Bearer ${token}`  //  Include this!
     },
     body: JSON.stringify({
       name: document.getElementById("name").value,
