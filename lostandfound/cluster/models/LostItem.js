@@ -5,7 +5,7 @@ const lostItemSchema = new mongoose.Schema({
   model: { type: String, required: true },
   color: { type: String, required: true },
   locationLost: { type: String, required: true },
-  dateLost: { type: Date, required: true }, // ✅ This must match exactly
+  dateLost: { type: Date, required: true }, //  This must match exactly
   reportedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   dateReported: { type: Date, default: Date.now }
 });
