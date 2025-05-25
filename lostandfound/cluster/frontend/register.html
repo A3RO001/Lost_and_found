@@ -77,7 +77,7 @@
       const password = document.getElementById("password").value;
 
       if (!isValidEmail(email)) {
-        M.toast({ html: "❗ Invalid email format", classes: "red rounded", displayLength: 3000 });
+        M.toast({ html: " Invalid email format", classes: "red rounded", displayLength: 3000 });
         return;
       }
 
@@ -92,7 +92,7 @@
 
         if (res.ok) {
           M.toast({
-            html: "🎉 Registration successful!",
+            html: " Registration successful!",
             classes: "green rounded",
             displayLength: 3000
           });
