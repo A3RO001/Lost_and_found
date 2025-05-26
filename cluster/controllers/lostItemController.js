@@ -65,7 +65,7 @@ exports.searchLostItems = async (req, res) => {
   }
 };
 
-// 🔹 GET all lost items (for dashboard)
+//  GET all lost items (for dashboard)
 exports.getAllLostItems = async (req, res) => {
   try {
     const items = await LostItem.find().sort({ dateLost: -1 });
