@@ -65,7 +65,7 @@ exports.searchFoundItems = async (req, res) => {
   }
 };
 
-// 🔹 GET all found items (for dashboard)
+//  GET all found items (for dashboard)
 exports.getAllFoundItems = async (req, res) => {
   try {
     const items = await FoundItem.find().sort({ dateFound: -1 });
